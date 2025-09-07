@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "@acme/ui/globals.css";
+import { GluestackUIProvider } from "@acme/ui/gluestack-ui-provider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,7 +14,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <GluestackUIProvider mode="light">
+          {children}
+        </GluestackUIProvider>
+      </body>
     </html>
   );
 }

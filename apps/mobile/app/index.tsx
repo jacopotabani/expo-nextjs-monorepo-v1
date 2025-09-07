@@ -1,15 +1,15 @@
-import { Card } from "@/components/ui/card";
-import { Heading } from "@/components/ui/heading";
-import { HStack } from "@/components/ui/hstack";
-import { Image } from "@/components/ui/image";
-import { Link, LinkText } from "@/components/ui/link";
-import { Text } from "@/components/ui/text";
+import { Card } from "@acme/ui/components/card";
+import { Heading } from "@acme/ui/components/heading";
+import { HStack } from "@acme/ui/components/hstack";
+import { Image } from "@acme/ui/components/image";
+import { Link, LinkText } from "@acme/ui/components/link";
+import { Text } from "@acme/ui/components/text";
 import {
   Icon,
   ArrowRightIcon,
   ChevronUpIcon,
   ChevronDownIcon,
-} from "@/components/ui/icon";
+} from "@acme/ui/components/icon";
 import { View } from "react-native";
 import SignUp from "./sign-up";
 import SignIn from "./sign-in";
@@ -22,7 +22,7 @@ import {
   AccordionContent,
   AccordionContentText,
   AccordionIcon,
-} from "@/components/ui/accordion";
+} from "@acme/ui/components/accordion";
 
 export default function Index() {
   return (

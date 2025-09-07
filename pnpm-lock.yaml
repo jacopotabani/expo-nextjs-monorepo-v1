@@ -23,8 +23,11 @@ importers:
       '@acme/auth':
         specifier: workspace:*
         version: link:../../packages/auth
+      '@acme/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       '@better-auth/expo':
-        specifier: ^1.2.12
+        specifier: ^1.3.8
         version: 1.3.8(better-auth@1.3.8)
       '@expo/html-elements':
         specifier: ^0.12.5
@@ -32,27 +35,6 @@ importers:
       '@expo/vector-icons':
         specifier: ^14.1.0
         version: 14.1.0(expo-font@13.3.2)(react-native@0.79.5)(react@19.0.0)
-      '@gluestack-ui/core':
-        specifier: ^3.0.2
-        version: 3.0.2(react-dom@19.0.0)(react-native-web@0.20.0)(react-native@0.79.5)(react@19.0.0)(tailwindcss@3.4.17)
-      '@gluestack-ui/icon':
-        specifier: ^0.1.27
-        version: 0.1.27(react-dom@19.0.0)(react-native@0.79.5)(react@19.0.0)
-      '@gluestack-ui/image':
-        specifier: ^0.1.17
-        version: 0.1.17(react-dom@19.0.0)(react-native@0.79.5)(react@19.0.0)
-      '@gluestack-ui/link':
-        specifier: ^0.1.29
-        version: 0.1.29(react-dom@19.0.0)(react-native@0.79.5)(react@19.0.0)
-      '@gluestack-ui/nativewind-utils':
-        specifier: ^1.0.28
-        version: 1.0.28(nativewind@4.1.23)(react@19.0.0)(tailwindcss@3.4.17)
-      '@gluestack-ui/overlay':
-        specifier: ^0.1.22
-        version: 0.1.22(react-dom@19.0.0)(react-native@0.79.5)(react@19.0.0)
-      '@gluestack-ui/toast':
-        specifier: ^1.0.9
-        version: 1.0.9(react-dom@19.0.0)(react-native@0.79.5)(react@19.0.0)
       '@react-navigation/bottom-tabs':
         specifier: ^7.3.10
         version: 7.4.7(@react-navigation/native@7.1.17)(react-native-safe-area-context@5.4.0)(react-native-screens@4.11.1)(react-native@0.79.5)(react@19.0.0)
@@ -62,14 +44,11 @@ importers:
       '@react-navigation/native':
         specifier: ^7.1.6
         version: 7.1.17(react-native@0.79.5)(react@19.0.0)
-      '@types/pg':
-        specifier: ^8.15.4
-        version: 8.15.5
       babel-plugin-module-resolver:
         specifier: ^5.0.2
         version: 5.0.2
       better-auth:
-        specifier: ^1.2.12
+        specifier: ^1.3.8
         version: 1.3.8(react-dom@19.0.0)(react@19.0.0)
       expo:
         specifier: ~53.0.17
@@ -113,12 +92,6 @@ importers:
       expo-web-browser:
         specifier: ~14.2.0
         version: 14.2.0(expo@53.0.22)(react-native@0.79.5)
-      nativewind:
-        specifier: ~4.1.23
-        version: 4.1.23(react-native-reanimated@3.17.5)(react-native-safe-area-context@5.4.0)(react-native-svg@15.12.1)(react-native@0.79.5)(react@19.0.0)(tailwindcss@3.4.17)
-      pg:
-        specifier: ^8.16.3
-        version: 8.16.3
       react:
         specifier: 19.0.0
         version: 19.0.0
@@ -128,9 +101,6 @@ importers:
       react-native:
         specifier: 0.79.5
         version: 0.79.5(@babel/core@7.28.4)(@types/react@19.0.14)(react@19.0.0)
-      react-native-css-interop:
-        specifier: ^0.1.22
-        version: 0.1.22(react-native-reanimated@3.17.5)(react-native-safe-area-context@5.4.0)(react-native-svg@15.12.1)(react-native@0.79.5)(react@19.0.0)(tailwindcss@3.4.17)
       react-native-gesture-handler:
         specifier: ~2.24.0
         version: 2.24.0(react-native@0.79.5)(react@19.0.0)
@@ -254,39 +224,51 @@ importers:
 
   packages/ui:
     dependencies:
-      '@radix-ui/react-checkbox':
-        specifier: ^1.3.2
-        version: 1.3.3(@types/react-dom@19.0.6)(@types/react@19.0.14)(react-dom@19.0.0)(react@19.0.0)
-      '@radix-ui/react-label':
-        specifier: ^2.1.7
-        version: 2.1.7(@types/react-dom@19.0.6)(@types/react@19.0.14)(react-dom@19.0.0)(react@19.0.0)
-      '@radix-ui/react-slot':
-        specifier: ^1.2.3
-        version: 1.2.3(@types/react@19.0.14)(react@19.0.0)
-      class-variance-authority:
-        specifier: ^0.7.1
-        version: 0.7.1
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
-      lucide-react:
-        specifier: ^0.525.0
-        version: 0.525.0(react@19.0.0)
+      '@gluestack-ui/core':
+        specifier: ^3.0.2
+        version: 3.0.2(react-dom@19.0.0)(react-native-web@0.20.0)(react-native@0.79.5)(react@19.0.0)(tailwindcss@4.1.13)
+      '@gluestack-ui/icon':
+        specifier: ^0.1.27
+        version: 0.1.27(react-dom@19.0.0)(react-native@0.79.5)(react@19.0.0)
+      '@gluestack-ui/image':
+        specifier: ^0.1.17
+        version: 0.1.17(react-dom@19.0.0)(react-native@0.79.5)(react@19.0.0)
+      '@gluestack-ui/link':
+        specifier: ^0.1.29
+        version: 0.1.29(react-dom@19.0.0)(react-native@0.79.5)(react@19.0.0)
+      '@gluestack-ui/nativewind-utils':
+        specifier: ^1.0.28
+        version: 1.0.28(nativewind@4.1.23)(react@19.0.0)(tailwindcss@4.1.13)
+      '@gluestack-ui/overlay':
+        specifier: ^0.1.22
+        version: 0.1.22(react-dom@19.0.0)(react-native@0.79.5)(react@19.0.0)
+      '@gluestack-ui/toast':
+        specifier: ^1.0.9
+        version: 1.0.9(react-dom@19.0.0)(react-native@0.79.5)(react@19.0.0)
+      nativewind:
+        specifier: ~4.1.23
+        version: 4.1.23(react-native-reanimated@3.17.5)(react-native-svg@15.12.1)(react-native@0.79.5)(react@19.0.0)(tailwindcss@4.1.13)
       react:
         specifier: ^19.0.0
         version: 19.0.0
       react-dom:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
-      tailwind-merge:
-        specifier: ^3.3.1
-        version: 3.3.1
+      react-native:
+        specifier: 0.79.5
+        version: 0.79.5(@babel/core@7.28.4)(@types/react@19.0.14)(react@19.0.0)
+      react-native-css-interop:
+        specifier: ^0.1.22
+        version: 0.1.22(react-native-reanimated@3.17.5)(react-native-svg@15.12.1)(react-native@0.79.5)(react@19.0.0)(tailwindcss@4.1.13)
+      react-native-svg:
+        specifier: ^15.11.2
+        version: 15.12.1(react-native@0.79.5)(react@19.0.0)
+      react-native-web:
+        specifier: ~0.20.0
+        version: 0.20.0(react-dom@19.0.0)(react@19.0.0)
       tailwindcss:
         specifier: ^4.1.11
         version: 4.1.13
-      tw-animate-css:
-        specifier: ^1.3.5
-        version: 1.3.8
     devDependencies:
       '@acme/eslint':
         specifier: workspace:*
@@ -1851,7 +1833,7 @@ packages:
       tslib: 2.8.1
     dev: false
 
-  /@gluestack-ui/core@3.0.2(react-dom@19.0.0)(react-native-web@0.20.0)(react-native@0.79.5)(react@19.0.0)(tailwindcss@3.4.17):
+  /@gluestack-ui/core@3.0.2(react-dom@19.0.0)(react-native-web@0.20.0)(react-native@0.79.5)(react@19.0.0)(tailwindcss@4.1.13):
     resolution: {integrity: sha512-5tSBtvcY8YgQkP7lj7UrkOYcrXipntznRA5tgwlLHT0IURYJdAGRSgtra3K8WUkh6T9k1vTkMAu3hiUR8CMYTw==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -1859,7 +1841,7 @@ packages:
       react-native: '>=0.64.0'
       react-native-web: '>=0.19.0'
     dependencies:
-      '@gluestack-ui/utils': 3.0.3(react-dom@19.0.0)(react-native-web@0.20.0)(react-native@0.79.5)(react@19.0.0)(tailwindcss@3.4.17)
+      '@gluestack-ui/utils': 3.0.3(react-dom@19.0.0)(react-native-web@0.20.0)(react-native@0.79.5)(react@19.0.0)(tailwindcss@4.1.13)
       react: 19.0.0
       react-native: 0.79.5(@babel/core@7.28.4)(@types/react@19.0.14)(react@19.0.0)
       react-native-svg: 15.12.1(react-native@0.79.5)(react@19.0.0)
@@ -1924,17 +1906,17 @@ packages:
       - react-native
     dev: false
 
-  /@gluestack-ui/nativewind-utils@1.0.28(nativewind@4.1.23)(react@19.0.0)(tailwindcss@3.4.17):
+  /@gluestack-ui/nativewind-utils@1.0.28(nativewind@4.1.23)(react@19.0.0)(tailwindcss@4.1.13):
     resolution: {integrity: sha512-POWYUK99Y9zRbDbTv0/FF6YtPmymaAmqgWKU3QYFjraK3HPAgF9HjovJVEN8SycEDylJAnACw53AoHFQ3Bxh+A==}
     peerDependencies:
       nativewind: '>=4.0'
       react: '>=16'
     dependencies:
       find-yarn-workspace-root: 2.0.0
-      nativewind: 4.1.23(react-native-reanimated@3.17.5)(react-native-safe-area-context@5.4.0)(react-native-svg@15.12.1)(react-native@0.79.5)(react@19.0.0)(tailwindcss@3.4.17)
+      nativewind: 4.1.23(react-native-reanimated@3.17.5)(react-native-svg@15.12.1)(react-native@0.79.5)(react@19.0.0)(tailwindcss@4.1.13)
       patch-package: 8.0.0
       react: 19.0.0
-      tailwind-variants: 0.1.20(tailwindcss@3.4.17)
+      tailwind-variants: 0.1.20(tailwindcss@4.1.13)
     transitivePeerDependencies:
       - tailwindcss
     dev: false
@@ -2028,7 +2010,7 @@ packages:
       - react-native
     dev: false
 
-  /@gluestack-ui/utils@3.0.3(react-dom@19.0.0)(react-native-web@0.20.0)(react-native@0.79.5)(react@19.0.0)(tailwindcss@3.4.17):
+  /@gluestack-ui/utils@3.0.3(react-dom@19.0.0)(react-native-web@0.20.0)(react-native@0.79.5)(react@19.0.0)(tailwindcss@4.1.13):
     resolution: {integrity: sha512-vrJKYnh0Hm6HGFWNDTtephOiFdw7lpuobsPiErdSL+MVOjvmUt3OSKhhvvPKGMPpRGtmepXkmpo8TE8bTWXRcg==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -2043,8 +2025,8 @@ packages:
       react-native: 0.79.5(@babel/core@7.28.4)(@types/react@19.0.14)(react@19.0.0)
       react-native-web: 0.20.0(react-dom@19.0.0)(react@19.0.0)
       react-stately: 3.41.0(react@19.0.0)
-      tailwind-variants: 0.1.14(tailwindcss@3.4.17)
-      tailwindcss: 3.4.17
+      tailwind-variants: 0.1.14(tailwindcss@4.1.13)
+      tailwindcss: 4.1.13
     transitivePeerDependencies:
       - react-dom
     dev: false
@@ -2636,37 +2618,6 @@ packages:
     dev: false
     optional: true
 
-  /@radix-ui/primitive@1.1.3:
-    resolution: {integrity: sha512-JTF99U/6XIjCBo0wqkU5sK10glYe27MRRsfwoiq5zzOEZLHU3A3KCMa5X/azekYRCJ0HlwI0crAXS/5dEHTzDg==}
-    dev: false
-
-  /@radix-ui/react-checkbox@1.3.3(@types/react-dom@19.0.6)(@types/react@19.0.14)(react-dom@19.0.0)(react@19.0.0):
-    resolution: {integrity: sha512-wBbpv+NQftHDdG86Qc0pIyXk5IR3tM8Vd0nWLKDcX8nNn4nXFOFwsKuqw2okA/1D/mpaAkmuyndrPJTYDNZtFw==}
-    peerDependencies:
-      '@types/react': '*'
-      '@types/react-dom': '*'
-      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      '@types/react-dom':
-        optional: true
-    dependencies:
-      '@radix-ui/primitive': 1.1.3
-      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.0.14)(react@19.0.0)
-      '@radix-ui/react-context': 1.1.2(@types/react@19.0.14)(react@19.0.0)
-      '@radix-ui/react-presence': 1.1.5(@types/react-dom@19.0.6)(@types/react@19.0.14)(react-dom@19.0.0)(react@19.0.0)
-      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.0.6)(@types/react@19.0.14)(react-dom@19.0.0)(react@19.0.0)
-      '@radix-ui/react-use-controllable-state': 1.2.2(@types/react@19.0.14)(react@19.0.0)
-      '@radix-ui/react-use-previous': 1.1.1(@types/react@19.0.14)(react@19.0.0)
-      '@radix-ui/react-use-size': 1.1.1(@types/react@19.0.14)(react@19.0.0)
-      '@types/react': 19.0.14
-      '@types/react-dom': 19.0.6(@types/react@19.0.14)
-      react: 19.0.0
-      react-dom: 19.0.0(react@19.0.0)
-    dev: false
-
   /@radix-ui/react-compose-refs@1.1.2(@types/react@19.0.14)(react@19.0.0):
     resolution: {integrity: sha512-z4eqJvfiNnFMHIIvXP3CY57y2WJs5g2v3X0zm9mEJkrkNv4rDxu+sg9Jh8EkXyeqBkB7SOcboo9dMVqhyrACIg==}
     peerDependencies:
@@ -2680,80 +2631,6 @@ packages:
       react: 19.0.0
     dev: false
 
-  /@radix-ui/react-context@1.1.2(@types/react@19.0.14)(react@19.0.0):
-    resolution: {integrity: sha512-jCi/QKUM2r1Ju5a3J64TH2A5SpKAgh0LpknyqdQ4m6DCV0xJ2HG1xARRwNGPQfi1SLdLWZ1OJz6F4OMBBNiGJA==}
-    peerDependencies:
-      '@types/react': '*'
-      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-    dependencies:
-      '@types/react': 19.0.14
-      react: 19.0.0
-    dev: false
-
-  /@radix-ui/react-label@2.1.7(@types/react-dom@19.0.6)(@types/react@19.0.14)(react-dom@19.0.0)(react@19.0.0):
-    resolution: {integrity: sha512-YT1GqPSL8kJn20djelMX7/cTRp/Y9w5IZHvfxQTVHrOqa2yMl7i/UfMqKRU5V7mEyKTrUVgJXhNQPVCG8PBLoQ==}
-    peerDependencies:
-      '@types/react': '*'
-      '@types/react-dom': '*'
-      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      '@types/react-dom':
-        optional: true
-    dependencies:
-      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.0.6)(@types/react@19.0.14)(react-dom@19.0.0)(react@19.0.0)
-      '@types/react': 19.0.14
-      '@types/react-dom': 19.0.6(@types/react@19.0.14)
-      react: 19.0.0
-      react-dom: 19.0.0(react@19.0.0)
-    dev: false
-
-  /@radix-ui/react-presence@1.1.5(@types/react-dom@19.0.6)(@types/react@19.0.14)(react-dom@19.0.0)(react@19.0.0):
-    resolution: {integrity: sha512-/jfEwNDdQVBCNvjkGit4h6pMOzq8bHkopq458dPt2lMjx+eBQUohZNG9A7DtO/O5ukSbxuaNGXMjHicgwy6rQQ==}
-    peerDependencies:
-      '@types/react': '*'
-      '@types/react-dom': '*'
-      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      '@types/react-dom':
-        optional: true
-    dependencies:
-      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.0.14)(react@19.0.0)
-      '@radix-ui/react-use-layout-effect': 1.1.1(@types/react@19.0.14)(react@19.0.0)
-      '@types/react': 19.0.14
-      '@types/react-dom': 19.0.6(@types/react@19.0.14)
-      react: 19.0.0
-      react-dom: 19.0.0(react@19.0.0)
-    dev: false
-
-  /@radix-ui/react-primitive@2.1.3(@types/react-dom@19.0.6)(@types/react@19.0.14)(react-dom@19.0.0)(react@19.0.0):
-    resolution: {integrity: sha512-m9gTwRkhy2lvCPe6QJp4d3G1TYEUHn/FzJUtq9MjH46an1wJU+GdoGC5VLof8RX8Ft/DlpshApkhswDLZzHIcQ==}
-    peerDependencies:
-      '@types/react': '*'
-      '@types/react-dom': '*'
-      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      '@types/react-dom':
-        optional: true
-    dependencies:
-      '@radix-ui/react-slot': 1.2.3(@types/react@19.0.14)(react@19.0.0)
-      '@types/react': 19.0.14
-      '@types/react-dom': 19.0.6(@types/react@19.0.14)
-      react: 19.0.0
-      react-dom: 19.0.0(react@19.0.0)
-    dev: false
-
   /@radix-ui/react-slot@1.2.0(@types/react@19.0.14)(react@19.0.0):
     resolution: {integrity: sha512-ujc+V6r0HNDviYqIK3rW4ffgYiZ8g5DEHrGJVk4x7kTlLXRDILnKX9vAUYeIsLOoDpDJ0ujpqMkjH4w2ofuo6w==}
     peerDependencies:
@@ -2764,89 +2641,6 @@ packages:
         optional: true
     dependencies:
       '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.0.14)(react@19.0.0)
-      '@types/react': 19.0.14
-      react: 19.0.0
-    dev: false
-
-  /@radix-ui/react-slot@1.2.3(@types/react@19.0.14)(react@19.0.0):
-    resolution: {integrity: sha512-aeNmHnBxbi2St0au6VBVC7JXFlhLlOnvIIlePNniyUNAClzmtAUEY8/pBiK3iHjufOlwA+c20/8jngo7xcrg8A==}
-    peerDependencies:
-      '@types/react': '*'
-      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-    dependencies:
-      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.0.14)(react@19.0.0)
-      '@types/react': 19.0.14
-      react: 19.0.0
-    dev: false
-
-  /@radix-ui/react-use-controllable-state@1.2.2(@types/react@19.0.14)(react@19.0.0):
-    resolution: {integrity: sha512-BjasUjixPFdS+NKkypcyyN5Pmg83Olst0+c6vGov0diwTEo6mgdqVR6hxcEgFuh4QrAs7Rc+9KuGJ9TVCj0Zzg==}
-    peerDependencies:
-      '@types/react': '*'
-      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-    dependencies:
-      '@radix-ui/react-use-effect-event': 0.0.2(@types/react@19.0.14)(react@19.0.0)
-      '@radix-ui/react-use-layout-effect': 1.1.1(@types/react@19.0.14)(react@19.0.0)
-      '@types/react': 19.0.14
-      react: 19.0.0
-    dev: false
-
-  /@radix-ui/react-use-effect-event@0.0.2(@types/react@19.0.14)(react@19.0.0):
-    resolution: {integrity: sha512-Qp8WbZOBe+blgpuUT+lw2xheLP8q0oatc9UpmiemEICxGvFLYmHm9QowVZGHtJlGbS6A6yJ3iViad/2cVjnOiA==}
-    peerDependencies:
-      '@types/react': '*'
-      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-    dependencies:
-      '@radix-ui/react-use-layout-effect': 1.1.1(@types/react@19.0.14)(react@19.0.0)
-      '@types/react': 19.0.14
-      react: 19.0.0
-    dev: false
-
-  /@radix-ui/react-use-layout-effect@1.1.1(@types/react@19.0.14)(react@19.0.0):
-    resolution: {integrity: sha512-RbJRS4UWQFkzHTTwVymMTUv8EqYhOp8dOOviLj2ugtTiXRaRQS7GLGxZTLL1jWhMeoSCf5zmcZkqTl9IiYfXcQ==}
-    peerDependencies:
-      '@types/react': '*'
-      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-    dependencies:
-      '@types/react': 19.0.14
-      react: 19.0.0
-    dev: false
-
-  /@radix-ui/react-use-previous@1.1.1(@types/react@19.0.14)(react@19.0.0):
-    resolution: {integrity: sha512-2dHfToCj/pzca2Ck724OZ5L0EVrr3eHRNsG/b3xQJLA2hZpVCS99bLAX+hm1IHXDEnzU6by5z/5MIY794/a8NQ==}
-    peerDependencies:
-      '@types/react': '*'
-      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-    dependencies:
-      '@types/react': 19.0.14
-      react: 19.0.0
-    dev: false
-
-  /@radix-ui/react-use-size@1.1.1(@types/react@19.0.14)(react@19.0.0):
-    resolution: {integrity: sha512-ewrXRDTAqAXlkl6t/fkXWNAhFX9I+CkKlw6zjEwk86RSPKwZr3xpBRso655aqYafwtnbpHLj6toFzmd6xdVptQ==}
-    peerDependencies:
-      '@types/react': '*'
-      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-    dependencies:
-      '@radix-ui/react-use-layout-effect': 1.1.1(@types/react@19.0.14)(react@19.0.0)
       '@types/react': 19.0.14
       react: 19.0.0
     dev: false
@@ -4923,6 +4717,7 @@ packages:
       '@types/react': ^19.0.0
     dependencies:
       '@types/react': 19.0.14
+    dev: true
 
   /@types/react@19.0.14:
     resolution: {integrity: sha512-ixLZ7zG7j1fM0DijL9hDArwhwcCb4vqmePgwtV0GfnkHRSCUEv4LvzarcTdhoqgyMznUx/EhoTUv31CKZzkQlw==}
@@ -6003,12 +5798,6 @@ packages:
   /ci-info@3.9.0:
     resolution: {integrity: sha512-NIxF55hv4nSqQswkAeiOi1r83xy8JldOFDTWiug55KBu9Jnblncd2U6ViHmYgHf01TPZS77NJBhBMKdWj9HQMQ==}
     engines: {node: '>=8'}
-    dev: false
-
-  /class-variance-authority@0.7.1:
-    resolution: {integrity: sha512-Ka+9Trutv7G8M6WT6SeiRWz792K5qEqIGEGzXKhAE6xOWAY6pPH8U+9IY3oCMv6kqTmLsv7Xh/2w2RigkePMsg==}
-    dependencies:
-      clsx: 2.1.1
     dev: false
 
   /cli-cursor@2.1.0:
@@ -9057,7 +8846,7 @@ packages:
     hasBin: true
     dev: true
 
-  /nativewind@4.1.23(react-native-reanimated@3.17.5)(react-native-safe-area-context@5.4.0)(react-native-svg@15.12.1)(react-native@0.79.5)(react@19.0.0)(tailwindcss@3.4.17):
+  /nativewind@4.1.23(react-native-reanimated@3.17.5)(react-native-svg@15.12.1)(react-native@0.79.5)(react@19.0.0)(tailwindcss@4.1.13):
     resolution: {integrity: sha512-oLX3suGI6ojQqWxdQezOSM5GmJ4KvMnMtmaSMN9Ggb5j7ysFt4nHxb1xs8RDjZR7BWc+bsetNJU8IQdQMHqRpg==}
     engines: {node: '>=16'}
     peerDependencies:
@@ -9065,8 +8854,8 @@ packages:
     dependencies:
       comment-json: 4.2.5
       debug: 4.4.1
-      react-native-css-interop: 0.1.22(react-native-reanimated@3.17.5)(react-native-safe-area-context@5.4.0)(react-native-svg@15.12.1)(react-native@0.79.5)(react@19.0.0)(tailwindcss@3.4.17)
-      tailwindcss: 3.4.17
+      react-native-css-interop: 0.1.22(react-native-reanimated@3.17.5)(react-native-svg@15.12.1)(react-native@0.79.5)(react@19.0.0)(tailwindcss@4.1.13)
+      tailwindcss: 4.1.13
     transitivePeerDependencies:
       - react
       - react-native
@@ -9906,7 +9695,7 @@ packages:
     resolution: {integrity: sha512-tr41fA15Vn8p4X9ntI+yCyeGSf1TlYaY5vlTZfQmeLBrFo3psOPX6HhTDnFNL9uj3EhP0KAQ80cugCl4b4BERA==}
     dev: false
 
-  /react-native-css-interop@0.1.22(react-native-reanimated@3.17.5)(react-native-safe-area-context@5.4.0)(react-native-svg@15.12.1)(react-native@0.79.5)(react@19.0.0)(tailwindcss@3.4.17):
+  /react-native-css-interop@0.1.22(react-native-reanimated@3.17.5)(react-native-svg@15.12.1)(react-native@0.79.5)(react@19.0.0)(tailwindcss@4.1.13):
     resolution: {integrity: sha512-Mu01e+H9G+fxSWvwtgWlF5MJBJC4VszTCBXopIpeR171lbeBInHb8aHqoqRPxmJpi3xIHryzqKFOJYAdk7PBxg==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -9930,10 +9719,9 @@ packages:
       react: 19.0.0
       react-native: 0.79.5(@babel/core@7.28.4)(@types/react@19.0.14)(react@19.0.0)
       react-native-reanimated: 3.17.5(@babel/core@7.28.4)(react-native@0.79.5)(react@19.0.0)
-      react-native-safe-area-context: 5.4.0(react-native@0.79.5)(react@19.0.0)
       react-native-svg: 15.12.1(react-native@0.79.5)(react@19.0.0)
       semver: 7.7.2
-      tailwindcss: 3.4.17
+      tailwindcss: 4.1.13
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -10958,28 +10746,24 @@ packages:
     resolution: {integrity: sha512-3mFKyCo/MBcgyOTlrY8T7odzZFx+w+qKSMAmdFzRvqBfLlSigU6TZnlFHK0lkMwj9Bj8OYU+9yW9lmGuS0QEnQ==}
     dev: false
 
-  /tailwind-merge@3.3.1:
-    resolution: {integrity: sha512-gBXpgUm/3rp1lMZZrM/w7D8GKqshif0zAymAhbCyIt8KMe+0v9DQ7cdYLR4FHH/cKpdTXb+A/tKKU3eolfsI+g==}
-    dev: false
-
-  /tailwind-variants@0.1.14(tailwindcss@3.4.17):
+  /tailwind-variants@0.1.14(tailwindcss@4.1.13):
     resolution: {integrity: sha512-qfOkSGP+cSolTTkJboldGmiM+w5uE77pazCRkwixEBsuaml9CmhN0E8qgH7QnZNmOTVSsgRK1tn/MsKOvOKVWA==}
     engines: {node: '>=16.x', pnpm: '>=7.x'}
     peerDependencies:
       tailwindcss: '*'
     dependencies:
       tailwind-merge: 1.14.0
-      tailwindcss: 3.4.17
+      tailwindcss: 4.1.13
     dev: false
 
-  /tailwind-variants@0.1.20(tailwindcss@3.4.17):
+  /tailwind-variants@0.1.20(tailwindcss@4.1.13):
     resolution: {integrity: sha512-AMh7x313t/V+eTySKB0Dal08RHY7ggYK0MSn/ad8wKWOrDUIzyiWNayRUm2PIJ4VRkvRnfNuyRuKbLV3EN+ewQ==}
     engines: {node: '>=16.x', pnpm: '>=7.x'}
     peerDependencies:
       tailwindcss: '*'
     dependencies:
       tailwind-merge: 1.14.0
-      tailwindcss: 3.4.17
+      tailwindcss: 4.1.13
     dev: false
 
   /tailwindcss@3.4.17:
@@ -11218,10 +11002,6 @@ packages:
       turbo-windows-64: 2.5.6
       turbo-windows-arm64: 2.5.6
     dev: true
-
-  /tw-animate-css@1.3.8:
-    resolution: {integrity: sha512-Qrk3PZ7l7wUcGYhwZloqfkWCmaXZAoqjkdbIDvzfGshwGtexa/DAs9koXxIkrpEasyevandomzCBAV1Yyop5rw==}
-    dev: false
 
   /type-check@0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
