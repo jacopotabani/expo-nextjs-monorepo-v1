@@ -1,19 +1,10 @@
 {
-  "extends": "@acme/typescript/react-library.json",
+  "extends": "../../tsconfig.base",
+  "include": ["src", "../app"],
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@acme/*": [
-        "./src/*"
-      ]
-    },
+    "noEmit": true,
+    "composite": true,
     "jsx": "react-jsx"
   },
-  "include": [
-    "."
-  ],
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+  "references": []
 }
